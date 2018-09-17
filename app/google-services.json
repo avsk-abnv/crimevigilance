@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "147460420338",
+    "firebase_url": "https://crimevigilance-52c64.firebaseio.com",
+    "project_id": "crimevigilance-52c64",
+    "storage_bucket": "crimevigilance-52c64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147460420338:android:2f89389e7391f939",
+        "android_client_info": {
+          "package_name": "com.abnv.flamefreezer.crimevigilance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147460420338-77k6l95clgpr02tftveph4h6cepij603.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abnv.flamefreezer.crimevigilance",
+            "certificate_hash": "5ec85146f3cea1ba8986ccb73597ead9f180ad5d"
+          }
+        },
+        {
+          "client_id": "147460420338-8osb0rn3vv117nve06eqlrn0c5olj9j1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHFMbmtCMBM7tRUV02BB3_DoJxHwCl50s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147460420338-8osb0rn3vv117nve06eqlrn0c5olj9j1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

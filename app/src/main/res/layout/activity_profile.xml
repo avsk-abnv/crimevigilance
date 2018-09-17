@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE1E1E1"
+    tools:context="com.abnv.flamefreezer.crimevigilance.ProfileActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Name"
+        android:layout_below="@+id/Name"
+        android:text="@string/Change"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:id="@+id/linearLayout6">
+
+        <include
+            android:id="@+id/profile_bar"
+            layout="@layout/profile_bar" />
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp">
+
+            <ImageView
+                android:id="@+id/ProfilePic"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/bluehead" />
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/camera"
+            android:visibility="visible"
+            app:backgroundTint="#FFFFA200"
+            app:layout_anchor="@id/linear"
+            app:layout_anchorGravity="bottom|right|"
+            android:layout_marginTop="150dp"
+            app:rippleColor="#FFFF4D00" />
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp">
+
+        <Button
+            android:id="@+id/Upload"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/background"
+            android:onClick="onClick"
+            android:text="Upload"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/Crop"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background"
+            android:onClick="onClickCrop"
+            android:text="Crop"
+            android:visibility="gone" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="NAME  : "
+        android:textColor="#00a"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/Name"
+        android:layout_alignStart="@+id/main_content" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#fff"
+        android:text="---"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/main_content"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/ChangeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Name"
+        android:layout_below="@+id/Name"
+        android:onClick="onChangeName"
+        android:text="@string/Change"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="30dp"
+        android:text="USERNAME : "
+        android:textColor="#00a" />
+
+    <TextView
+        android:id="@+id/emailID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView13"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="26dp"
+        android:background="#FFCCCCCC"
+        android:text="---                                               "
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="20dp"
+        android:text="PASSWORD : "
+        android:textColor="#00a" />
+
+    <TextView
+        android:id="@+id/ChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onChangePassword"
+        android:text="@string/Change"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailID"
+        android:layout_below="@+id/main_content"
+        android:background="#FFFFFD7F"
+        android:onClick="onCancel"
+        android:text="  CANCEL"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="18dp"
+        android:background="#FFCCCCCC"
+        android:text="********                                    "
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+</RelativeLayout>

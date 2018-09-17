@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+    <item
+        android:id="@+id/menu_profile"
+        android:checked="false"
+        android:title="View Profile" />
+    <item
+        android:id="@+id/menu_addcrime"
+        android:checked="false"
+        android:title="Add a Crime" />
+    <item
+        android:id="@+id/menu_addmssingperson"
+        android:checked="false"
+        android:title="Add a Missing Person"/>
+   </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout" />
+</group>
+</menu>

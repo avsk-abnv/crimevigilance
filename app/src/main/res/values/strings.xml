@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Crime Vigilance</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_logged_in">LoggedInActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Search"><u>Tap to Search</u></string>
+    <string name="Back"><u>Back</u></string>
+    <string name="createacn"><u>Create Account</u></string>
+    <string name="Change"><u>Change</u></string>
+    <string name="YourRecords"><u><i>Your Records</i></u></string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_height="56dp"
+    android:background="@color/titlecolor"
+    app:popupTheme="@style/MyPopupStyle"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp">
+
+        <!-- This is a centered logo -->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/pic1"
+            android:id="@+id/img_nav"
+            />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="?attr/actionBarSize"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Crimes Around You"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/toolbar_title"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#fff"
+            android:ems="10"
+            android:hint="ZipCode"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textColorHint="#aaa"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="53dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/searchicon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
